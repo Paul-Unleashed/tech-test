@@ -8,9 +8,10 @@ namespace AnyCompany.Core.Command.Repositories
 
         public void Save(Order order)
         {
-            AnyCompanyDbContext.Instance.Add(order);
-            AnyCompanyDbContext.Instance.SaveChanges();
+            AnyCompanyDbContext context = AnyCompanyDbContext.Instance;
 
+            context.Add(order);
+            context.SaveChanges();
         }
     }
 }

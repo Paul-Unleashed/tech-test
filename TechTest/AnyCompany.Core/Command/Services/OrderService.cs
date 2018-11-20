@@ -11,8 +11,11 @@ namespace AnyCompany.Core.Command.Services
         {
             Customer customer = CustomerRepository.Load(customerId);
 
-            if (order.Amount == 0)
+            if (order == null || customer == null || order.Amount == 0)
                 return false;
+
+            // Completly replacing the customer prevents updates to the customer during PlaceOrder.
+            order.Customer = customer;
 
             if (customer.Country == "UK")
                 order.VAT = 0.2d;
