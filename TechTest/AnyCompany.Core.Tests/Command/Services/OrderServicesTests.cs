@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 using Xunit;
+[assembly: CollectionBehavior(CollectionBehavior.CollectionPerAssembly)]
 
 namespace AnyCompany.Core.Tests.Command.Services
 {

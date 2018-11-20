@@ -1,4 +1,5 @@
 ﻿using AnyCompany.Core.Command.Domain;
+using AnyCompany.Core.Query.Domain;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -29,6 +30,9 @@ namespace AnyCompany.Core
         public DbSet<Customer> Customers { get; set; }
 
         public DbSet<Order> Orders { get; set; }
+
+        // The DTO object could potentially be moved to a different context to complete the command/query split 
+        public DbSet<CustomerDTO> CustomerDTOs { get; set; }
 
     }
 }
