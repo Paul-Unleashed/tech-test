@@ -1,4 +1,7 @@
-﻿namespace AnyCompany
+﻿using AnyCompany.Core.Command.Domain;
+using AnyCompany.Core.Command.Repositories;
+
+namespace AnyCompany.Core.Command.Services
 {
     public class OrderService
     {

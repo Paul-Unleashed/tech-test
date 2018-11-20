@@ -1,4 +1,4 @@
-﻿namespace AnyCompany
+﻿namespace AnyCompany.Core.Command.Domain
 {
     public class Order
     {
