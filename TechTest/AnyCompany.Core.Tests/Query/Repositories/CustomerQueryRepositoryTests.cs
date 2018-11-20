@@ -1,5 +1,4 @@
-﻿using AnyCompany.Core.Command.Domain;
-using AnyCompany.Core.Query.Domain;
+﻿using AnyCompany.Core.Query.Domain;
 using AnyCompany.Core.Query.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System;
